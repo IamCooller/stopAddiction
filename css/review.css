@@ -1,0 +1,132 @@
+.review {
+    background: #f6f8fb;
+    padding: 25px 0;
+    overflow: hidden;
+}
+
+.review__list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review__item {
+    width: calc(50% - 20px);
+    background-color: #fff;
+    padding: 25px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 25px rgb(156 156 156 / 25%);
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review__content {
+    display: flex;
+    position: relative;
+    padding-left: 44px;
+}
+
+.review__content .i-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    fill: #369c8e;
+}
+
+.review__pic {
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.review__text {
+    font-size: 14px;
+    line-height: 1.8;
+    flex: 1;
+}
+
+.review__text p {
+    margin-top: 0;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 2;
+    color: #3D4F69
+}
+
+.review__meta {
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review__name {
+    color: #ee9f2a;
+    font-weight: 700;
+}
+
+.review__date {
+    color: #8c8c8c;
+    font-weight: 600;
+}
+
+.review__list .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+
+.review__list .slick-dots li {
+    list-style: none;
+}
+
+.review__list .slick-dots li button {
+    background: none;
+    border: 1px solid #369C8E;
+    box-sizing: border-box;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+}
+
+.review__list .slick-dots li.slick-active button {
+    background: #369C8E;
+}
+
+@media(max-width:990px) {
+    .review {
+        background: #F5F8FB;
+    }
+    .review__list {
+        flex-direction: column;
+    }
+    .review__item {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(156, 156, 156, 0.25);
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 550px) {
+    .review__content {
+        display: flex;
+        padding-left: 0;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .review__text p {
+        line-height: 1.7;
+    }
+}

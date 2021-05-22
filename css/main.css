@@ -1,0 +1,129 @@
+.main {
+    margin-bottom: 40px;
+}
+
+.bigBanner__wrap {
+    background: url(../img/main_bg.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 70px 180px;
+    position: relative;
+}
+
+.bigBanner__box {
+    position: relative;
+    z-index: 2;
+    max-width: 870px;
+    padding: 65px 20px 2px 65px;
+}
+
+.bigBanner__title {
+    color: rgba(255, 255, 255, .76);
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 75px;
+    margin: 0 0 25px;
+    max-width: 752px;
+    position: relative;
+}
+
+.bigBanner__box:after,
+.bigBanner__box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 7px solid rgba(255, 255, 255, .49);
+    border-right: 0;
+    border-bottom: 0;
+    width: 54%;
+    height: 80%;
+    animation: 1.5s linear .4s forwards fadeEffect;
+    opacity: 1;
+}
+
+.bigBanner__box:after {
+    border: 7px solid rgba(255, 255, 255, .49);
+    border-left: 0;
+    border-top: 0;
+    width: 46%;
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+}
+
+.bigBanner__btn {
+    min-width: 320px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+    color: #fff;
+    height: 50px;
+    padding: 0 18px;
+    outline: 0;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background: #369C8E;
+    box-shadow: 0px 4px 15px rgba(81, 73, 73, 0.21);
+    border-radius: 5px;
+}
+
+.bigBanner__btn:active {
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
+    -webkit-box-shadow: 0 2px 8px rgb(81 73 73 / 21%);
+    box-shadow: 0 2px 8px rgb(81 73 73 / 21%);
+}
+
+.bigBanner__btn:hover {
+    background-color: #0f6c60;
+    color: #fff;
+}
+
+@media( max-width:990px) {
+    .bigBanner__box:after,
+    .bigBanner__box:before {
+        content: none;
+    }
+    .bigBanner__title {
+        text-align: center;
+    }
+    .bigBanner__btn {
+        display: block;
+        margin: 0 auto;
+    }
+    .bigBanner__title {
+        font-size: 42px;
+        line-height: 53px;
+    }
+    .bigBanner__box {
+        padding: 0;
+    }
+}
+
+@media(max-width:550px) {
+    .bigBanner__wrap {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .bigBanner__title {
+        font-size: 27px;
+        line-height: 30px;
+    }
+    .bigBanner__btn {
+        min-width: 0;
+        max-width: 320px;
+        width: 100%;
+    }
+}

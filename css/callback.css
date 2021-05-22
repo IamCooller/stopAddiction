@@ -1,0 +1,110 @@
+.callback {
+    padding: 45px 0 60px;
+    background: url(../img/callback__bg.png) center/cover no-repeat;
+}
+
+.callback__title {
+    margin-bottom: 30px;
+}
+
+.tac {
+    text-align: center;
+}
+
+.callback__form .wpcf7 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.callback__form .wpcf7 label,
+.callback__form .wpcf7 input {
+    width: 32.5%;
+}
+
+.callback__form .wpcf7-form {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.callback__form .wpcf7 span {
+    display: block;
+    width: 100%;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.callback__form .wpcf7 span input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #EE9F2A;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 75px;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.callback__form .wpcf7 .wpcf7-form-control-wrap {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.callback__form .wpcf7 .wpcf7-submit {
+    background: #369C8E;
+    border-radius: 5px;
+    border: none;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 75px;
+    align-self: flex-end;
+}
+
+.callback__form .wpcf7 .wpcf7-submit:active {
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
+    -webkit-box-shadow: 0 2px 8px rgb(81 73 73 / 21%);
+    box-shadow: 0 2px 8px rgb(81 73 73 / 21%);
+}
+
+.callback__form .wpcf7 .wpcf7-submit:hover {
+    background-color: #0f6c60;
+    color: #fff;
+}
+
+.callback__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+@media(max-width:990px) {
+    .callback__form .wpcf7 label,
+    .callback__form .wpcf7 input {
+        width: 100%;
+    }
+    .callback__form .wpcf7 {
+        gap: 30px;
+    }
+    .callback__text {
+        text-align: center;
+    }
+}
