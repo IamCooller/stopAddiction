@@ -258,6 +258,10 @@ header {
     #menuToggle {
         display: block;
     }
+    .header__phones {
+        display: block;
+        margin-top: auto;
+    }
     .footer__nav ul,
     .header__box {
         flex-direction: column;
@@ -281,12 +285,6 @@ header {
     .header__top {
         justify-content: space-between;
         padding: 25px 0;
-    }
-    .header__location {
-        display: none;
-    }
-    .header__langSwitch {
-        display: block;
     }
     .header__bottom {
         display: none;
@@ -320,26 +318,9 @@ header {
     }
     .header__adress {
         display: block;
+        text-align: center;
     }
     .header .menu li:not(:first-child) {
         margin: 0;
-    }
-    .langSwitch__current {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 28px;
-        color: #369C8E;
-    }
-    .langSwitch__current:before {
-        content: '>';
-        position: absolute;
-        right: -5px;
-        top: 38%;
-        transform: translateY(-50%);
-        width: 10px;
-        height: 8px;
-        color: #369C8E;
-        transform: rotate(90deg);
     }
 }
