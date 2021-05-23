@@ -76,7 +76,7 @@ header {
 
 .btn:hover {
     color: #fff;
-    background: #FDC269;
+    background: #ff00159e;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 }
@@ -104,7 +104,7 @@ header {
 }
 
 .btn__orange {
-    background-color: #ee9f2a;
+    background: #e12837;
     box-shadow: 0 4px 15px rgb(0 0 0 / 15%);
     font-size: 16px;
 }
@@ -225,7 +225,8 @@ header {
 .header__bottom {
     margin: 15px 0;
     padding: 0;
-    width: 100%;
+    margin-right: auto;
+    padding-left: 43px;
     display: flex;
     justify-content: flex-start;
     gap: 30px;
@@ -237,12 +238,17 @@ header {
 
 .header__bottom a {
     text-decoration: none;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Gilroy";
     font-size: 16px;
     line-height: 22px;
-    color: #474747;
+    transition: .3s;
+    color: #3c3c3c;
+}
+
+.header__bottom a:hover {
+    color: #ff3c41;
 }
 
 @media (max-width: 1220px) {
