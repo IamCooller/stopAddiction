@@ -29,10 +29,6 @@ Author URI: https://t.me/Ilya_Cooller
     }
 }
 
-body {
-    padding-top: 145px;
-}
-
 @media (max-width: 1370px) {
     body,
     html {
